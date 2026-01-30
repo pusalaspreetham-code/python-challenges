@@ -1,0 +1,20 @@
+studentid=input("Enter Studentid : ")
+email=input("Enter Email ID: ")
+pwd=input("Enter Password: ")
+ref=input("Enter Refferal code: ")
+valid=0
+if len(studentid)==7:
+    if studentid[0]=='C' and studentid[1]=='S' and studentid[2]=='E' and studentid[3]=='-' and studentid[4].isdigit() and studentid[5].isdigit() and studentid[6].isdigit():
+        valid+=1
+if email.count("@")==1 and email.count(".")>=1 and email[0]!="@" and email[len(email)-1]!="@" and email[len(email)-4]=="." and email[len(email)-3]=="e" and email[len(email)-2]=="d"and email[len(email)-1]=="u":
+    valid+=1
+if len(pwd)>=8 and pwd[0]>='A' and pwd[0]<='Z' and (pwd.count('0')+pwd.count('1')+pwd.count('2')+pwd.count('3')+pwd.count('4')+pwd.count('5')+pwd.count('6')+pwd.count('7')+pwd.count('8')+pwd.count('9'))>=1:
+    valid+=1
+if len(ref)==6:
+    if ref[0]=='R' and ref[1]=='E' and ref[2]=='F' and ref[3].isdigit() and ref[4].isdigit() and ref[5]=='@':
+        valid+=1
+
+if(valid==4):
+    print("APPROVED")
+else:
+    print("REJECTED")
