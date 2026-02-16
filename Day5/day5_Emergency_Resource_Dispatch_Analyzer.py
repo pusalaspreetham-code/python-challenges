@@ -30,7 +30,6 @@ print("Invalid Requests:", invalid_requests)
 print("Low Demand:", low_demand)
 print("Moderate Demand:", moderate_demand)
 print("High Demand:", high_demand)
-
 #PLI logic
 removed_count=0
 if PLI==0:
