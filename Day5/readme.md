@@ -7,6 +7,11 @@ During a disaster drill, emergency response teams report the number of resources
 -Situations indicating critical shortages
 
  This code analises into four categories and gives the output on personlisation logic
+ The resource requests are classified into:
+ -Invalid Requests (values less than 0)
+ -Low Demand (1 – 20)
+ -Moderate Demand (21 – 50)
+ -High Demand (greater than 50)
 
  Personlisation logic used:
 
