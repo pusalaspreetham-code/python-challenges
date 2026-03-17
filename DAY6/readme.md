@@ -21,13 +21,8 @@ Each suspicious condition adds points, and the total score determines whether th
 
 ## Test Case 1
 Input:
-6  
-100  
-2500  
-500  
-300  
--8
-455
+6
+100,2500,500,300,-8,455
 Output:
 Low Risk  
 Total = 3855
@@ -38,8 +33,7 @@ Count = 6
 ## Test Case 2
 Input:
 2
-100  
-4500
+100,4500
 Output:
 Low Risk  
 Total = 4600  
@@ -50,10 +44,7 @@ Count = 2
 ## Test Case 3
 Input:
 4
-100 
-4258  
-75
--8
+100,4258,75,-8
 Output:
 Low Risk
 Total = 16550  
